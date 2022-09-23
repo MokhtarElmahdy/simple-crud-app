@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD APP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+
+<div class="container">
+    <form action="" class="border  mt-3 bg-dark rounded" id="form">
+        <div class="p-3">
+            <label for="productName" class="text-white">product Name</label>
+            <input type="text" id="productName" class="form-control mt-3">
+        </div>
+        <div class="p-3">
+            <label for="productPrice" class="text-white">product Price</label>
+            <input type="text" id="productPrice" class="form-control mt-3">
+        </div>
+        <div class="p-3">
+            <label for="productCat" class="text-white">product Category</label>
+            <input type="text" id="productCat" class="form-control mt-3">
+        </div>
+        <div class="p-3">
+            <label for="productDesc" class="text-white">product Description</label>
+            <input type="text" id="productDesc" class="form-control mt-3">
+        </div>
+        <div class="text-center">
+            <input type="button" id="btnAdd" class="btn btn-success me-3" value="Add Product"> 
+            <input type="button" id="btnUpdateProduct" class="btn btn-success me-3" value="Update Product"> 
+            <input type="button" id="btnCancel" class="btn btn-danger px-4" value="Cancel"> 
+        </div>
+        <div class="p-3 text-center">
+            <input type="button" id="btnCancelUpdate" class="btn btn-danger px-4" value="Cancel Update"> 
+        </div>
+    </form>
+    <div class="border p-3  mt-3 bg-dark rounded text-center open" id="btnOpen">
+        <input type="button" id="btnOpen" class="btn btn-success px-5" value="Add Product"> 
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <th>index</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Category</th>
+        <th>Product Description</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </thead>
+    <tbody id="tableRow">
+
+    </tbody>
+</table>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
